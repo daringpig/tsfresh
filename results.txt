@@ -1,0 +1,79 @@
+learner@learner-T5:/media/learner/d/tsfresh-master$ python test-import-new.py 
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+/usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+(1318272, 2)
+Feature Extraction: 100%|█████████████████| 10299/10299 [03:14<00:00, 53.04it/s]
+------------------------------------------
+(10299, 275)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:19<00:00, 51.51it/s]
+------------------------------------------
+(10299, 550)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:20<00:00, 51.40it/s]
+------------------------------------------
+(10299, 825)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:16<00:00, 52.45it/s]
+------------------------------------------
+(10299, 1100)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:15<00:00, 52.76it/s]
+------------------------------------------
+(10299, 1375)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:13<00:00, 53.13it/s]
+------------------------------------------
+(10299, 1650)
+             precision    recall  f1-score   support
+
+          1       0.80      0.77      0.78       339
+          2       0.83      0.84      0.83       285
+          3       0.71      0.73      0.72       284
+          4       0.39      0.43      0.41       341
+          5       0.50      0.49      0.49       397
+          6       0.60      0.56      0.58       414
+
+avg / total       0.62      0.62      0.62      2060
+
+learner@learner-T5:/media/learner/d/tsfresh-master$ python test-import-new.py 
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+/usr/local/lib/python2.7/dist-packages/sklearn/cross_validation.py:44: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:13<00:00, 53.24it/s]
+------------------------------------------
+(10299, 275)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:15<00:00, 52.77it/s]
+------------------------------------------
+(10299, 550)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:15<00:00, 52.81it/s]
+------------------------------------------
+(10299, 825)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:14<00:00, 52.95it/s]
+------------------------------------------
+(10299, 1100)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:15<00:00, 52.73it/s]
+------------------------------------------
+(10299, 1375)
+(1318272, 2)
+Feature Extraction: 100%|██████████████████████████████████████████████████████████████| 10299/10299 [03:18<00:00, 52.01it/s]
+------------------------------------------
+(10299, 1650)
+             precision    recall  f1-score   support
+
+          1       0.78      0.83      0.80       323
+          2       0.83      0.81      0.82       323
+          3       0.71      0.67      0.69       272
+          4       0.43      0.42      0.42       364
+          5       0.48      0.47      0.48       406
+          6       0.55      0.57      0.56       372
+
+avg / total       0.62      0.62      0.62      2060
