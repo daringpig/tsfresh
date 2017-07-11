@@ -63,7 +63,18 @@ def load_har_dataset(filename):
     try:
         #for filename in []:
         #testtype = pd.read_csv(data_file_name_dataset, delim_whitespace=True, header=None)
-        data_file_name_dataset = os.path.join(module_path, 'data', 'UCI HAR Dataset', 'train', 'Inertial Signals', filename)
+        data_file_name_dataset = os.path.join(module_path, 'data', 'UCI HAR Dataset', 'train', filename)
+        return pd.read_csv(data_file_name_dataset, delim_whitespace=True, header=None)
+        #print type(testtype)
+    except IOError:
+        raise IOError('File {} was not found. Have you downloaded the dataset with download_har_dataset() '
+                      'before?'.format(data_file_name_dataset))
+
+def load_har_dataset_processed(filename):
+    try:
+        #for filename in []:
+        #testtype = pd.read_csv(data_file_name_dataset, delim_whitespace=True, header=None)
+        data_file_name_dataset = os.path.join(module_path, 'data', 'UCI HAR Dataset', 'train', filename)
         return pd.read_csv(data_file_name_dataset, delim_whitespace=True, header=None)
         #print type(testtype)
     except IOError:
@@ -71,8 +82,17 @@ def load_har_dataset(filename):
                       'before?'.format(data_file_name_dataset))
 
 
+
 def load_har_classes():
     try:
+        return pd.read_csv(data_file_name_classes, delim_whitespace=True, header=None, squeeze=True)
+    except IOError:
+        raise IOError('File {} was not found. Have you downloaded the dataset with download_har_dataset() '
+                      'before?'.format(data_file_name_classes))
+
+def load_har_classes_processed(filename):
+    try:
+        data_file_name_dataset = os.path.join(module_path, 'data', 'UCI HAR Dataset', 'test', filename)
         return pd.read_csv(data_file_name_classes, delim_whitespace=True, header=None, squeeze=True)
     except IOError:
         raise IOError('File {} was not found. Have you downloaded the dataset with download_har_dataset() '
